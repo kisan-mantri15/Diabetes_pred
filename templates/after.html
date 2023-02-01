@@ -1,0 +1,29 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+    
+    {%if data == 0 %}
+    <h1>You don't have diabetes.</h1>
+    <h1>Wishing you healthy happiness always.</h1> 
+    <img src='static\diabetic_negative.jpg'width="400" height="400">
+    
+
+    {%else%}
+    <h1>Take care</h1>
+    <h1>You have diabetes. </h1> 
+    <h1>Treat yourself with healthy diet and medicines.</h1>
+    <img src='static\diabetic_positive.jpg'width="400" height="400">
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/Homepage'>Go back to home page</a>
+
+    </center>
+
+</body>
+</html>

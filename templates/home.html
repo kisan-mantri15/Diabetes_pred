@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+</head>
+<body style="background-color: hsla(323, 58%, 69%, 0.159);"></body>
+    <!-- <center> -->
+    <center>
+    <h1> Diabetes Prediction</h1>
+    </center>
+    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSURANCE -->
+    <br>
+    <br>
+    <center>
+    <img src='static\diabetes.jpg'>
+    </center>
+    <br><br>
+    <center>
+    <form method="POST" action ="/predict_class">
+        
+        <label>GLUCOSE (Ranges  1-200):</label>
+        <input type="text" name ="Glucose ">
+        <br>
+        <br>   						
+        <label> BLOODPRESSURE(Ranges 0-150):</label>
+        <input type="text" name ="BloodPressure ">
+        
+        <br>  
+        <br>        
+        <label>SKINTHICKNESS(Ranges 0-99):</label>
+        <input type="text" name ="SkinThickness ">
+        <br>
+        <br>
+        <label>INSULIN(Ranges 0-300):</label>
+        <input type="text" name ="Insulin ">
+        <br>
+        <br>
+        <label>BMI(Ranges 0-50) :</label>
+        <input type="text" name ="BMI ">
+        <br>
+        <br>
+        <label>DIABETESPEDIGREEFUNCTION(Ranges 0-2):</label>
+        <input type="text" name ="DiabetesPedigreeFunction ">
+        <br>
+        <br>
+        <label>AGE(Ranges 0-100):</label>
+        <input type="text" name ="Age ">
+        <br>
+        <br>
+        
+      
+        
+        <br>
+        <br>
+        <input type="submit" value ="SUBMIT">
+     
+
+    </form>
+    </center>
+   
+    <br>
+    <br>
+    {{classes}}
+    <!-- </center>  -->
+</body>
+</html>
+
